@@ -1,0 +1,115 @@
+@import './node_modules/normalize.css/normalize.css';
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #713C7F;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Lato, sans-serif;
+}
+body .nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #41234A;
+  align-items: center;
+  height: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body .nav-bar .title {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  color: #E0C9DA;
+}
+body .nav-bar .title span {
+  font-weight: 600;
+  color: #E0C9DA;
+}
+body .nav-bar .list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  margin-right: 10px;
+  font-size: 10px;
+  height: 30px;
+}
+body .nav-bar .list li {
+  display: list-item;
+  margin-left: 10px;
+  font-weight: 100;
+}
+body .nav-bar .list li .home {
+  border-bottom: 2px solid black;
+}
+body .nav-bar .list li a {
+  font-size: 16px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-decoration: none;
+  color: #E0C9DA;
+}
+body .nav-bar .list li a:hover {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+body .container .title {
+  width: 100%;
+  text-align: center;
+  color: #E0C9DA;
+}
+body .container .container-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 720px) {
+  body .container .container-list {
+    flex-direction: column;
+  }
+}
+body .container .container-list .do-it {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container .container-list .do-it h2 {
+  color: #BB8FB8;
+  text-align: center;
+  border-bottom: 2px solid #41234A;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  width: 100%;
+}
+body .container .container-list .do-it .do-it-list {
+  align-self: center;
+}
+body .container .container-list .do-it .do-it-list img {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+body .container .container-list .dont-do-it h2 {
+  color: #BB8FB8;
+  text-align: center;
+  border-bottom: 2px solid #41234A;
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
+body .container .container-list .dont-do-it .dont-do-it-list {
+  align-self: center;
+}
+body .container .container-list .dont-do-it .dont-do-it-list img {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+/*# sourceMappingURL=gallery.css.map */
